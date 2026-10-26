@@ -1,0 +1,55 @@
+{
+  "source_repository": "https://github.com/leruetkins/tftp-np-light",
+  "source_commit": "b0aeaa128c16d70a29ccbba841ff9dcfbdaa53fc",
+  "license": "MIT; copyright (c) 2023 leruetkins; retained source/LICENSE",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1067,
+      "sha256": "4d738a79189a80a3cbfce2cc8acb0938bdd54169906e6542404262a12f1d31d6",
+      "git_blob": "e2de4800504dd3422a7f7114a352bb3936989595"
+    },
+    {
+      "path": "public/config.ejs",
+      "bytes": 12245,
+      "sha256": "12e62c37cefc0318a98e99ca5486c79084fe7d20751d32e722bb8718482c4663",
+      "git_blob": "aceec4eb2a07d68d0703536767ee5adf0e2ce1b5"
+    },
+    {
+      "path": "public/console.ejs",
+      "bytes": 13071,
+      "sha256": "960dc4871bf34fff6effacfba34417d936437f79cb929df77202d7b95fd256ac",
+      "git_blob": "29275c97685f4e817481b6b10a986527d9c5362f"
+    },
+    {
+      "path": "public/index.ejs",
+      "bytes": 7293,
+      "sha256": "3a71ef84f27486ebf6431f2153321811e08391859ad79513b776bfa7616c2e5d",
+      "git_blob": "06799769a151da33359700306e261c9d92bf566f"
+    },
+    {
+      "path": "public/menu.ejs",
+      "bytes": 17999,
+      "sha256": "ff5ec400306cbfc06c90549fe53fe47b3ab1c31431725c10889559d027d68b8b",
+      "git_blob": "9a8539fbb5a6dfb16f58777b030aa017811f31b2"
+    },
+    {
+      "path": "public/menu_editor.ejs",
+      "bytes": 4441,
+      "sha256": "dcedfb2bc9e8b338128a8a80f2abb3a3526f1ef25b1a719d577f84df97cdf2fa",
+      "git_blob": "d01af1e2dea82c61012b8ef7fd3fd0651083567e"
+    },
+    {
+      "path": "public/assets/css/index.css",
+      "bytes": 11212,
+      "sha256": "74ac3f74b9606faf65316dec740ea13db3db16252ee3c213a7377ddb285f6b52",
+      "git_blob": "58512367eb26f12ff307da57329429f9e1d7c3f5"
+    },
+    {
+      "path": "public/assets/js/index.js",
+      "bytes": 33618,
+      "sha256": "8cb610d30dba25726e2c6c64c761ac958fe7918127b4956ad437db6cef182821",
+      "git_blob": "de615c0952ad0dcb4ae41670baaac1b2c3013921"
+    }
+  ]
+}
