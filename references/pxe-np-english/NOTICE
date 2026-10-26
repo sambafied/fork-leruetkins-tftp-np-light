@@ -1,0 +1,11 @@
+PXE-NP English/menu source reference
+
+Selected files reproduced without modification from
+https://github.com/sambafied/fork-leruetkins-pxe-np
+commit 1b6be33569b47972bf939a2a332b0c533fd2cccf.
+The donor repository supplies the Apache License, Version 2.0; its complete
+LICENSE is retained at source/LICENSE. No separate upstream NOTICE file exists
+in the selected commit. This NOTICE is Sambafied's provenance notice, not an
+invented upstream notice or copyright attribution. The memtest.ejs template's
+original #!ipxe_author=Geralt annotation is preserved. No Memtest binary or
+third-party OS payload is included or relicensed by this recovery.
