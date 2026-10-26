@@ -1,0 +1,5 @@
+Sambafied BIOS PXELINUX
+
+No operating system image is selected by this reference profile.
+Type return to return control to firmware.
+Published asset root: @@PUBLIC_BASE_URL@@/@@ASSET_ROOT@@

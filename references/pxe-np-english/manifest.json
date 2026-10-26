@@ -1,0 +1,35 @@
+{
+  "source_repository": "https://github.com/sambafied/fork-leruetkins-pxe-np",
+  "source_commit": "1b6be33569b47972bf939a2a332b0c533fd2cccf",
+  "license": "Apache-2.0; exact upstream LICENSE retained",
+  "base_integration": "87d76ebd3b2cafbe7a04aa7efcd191ee584e2763",
+  "ancestry": {
+    "command": "git merge-base 0666a03c3c57b998b2efc4b1d1d6da9d2e386125 1b6be33569b47972bf939a2a332b0c533fd2cccf",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "",
+    "base_root": "3057980ef8cdb6d3af44f679bf773e48995fdf8f",
+    "donor_root": "36248a6c003640753bf7996cf805f99078946d30",
+    "both_non_shallow": true
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "public/menu.txt",
+      "bytes": 8216,
+      "sha256": "32cc2c9c5cadde19c81c99554abab726854b2864692697a51edac9f2277a05d1",
+      "git_blob": "7c11709906cc284399a1c22a9fec0284b1a823b4"
+    },
+    {
+      "path": "public/boot/soft/ipxes/memtest/memtest.ejs",
+      "bytes": 837,
+      "sha256": "59669b80ec9060f456ab790bb595d18ffca71d3161481c8768d2b09bc11a47ed",
+      "git_blob": "4d124112fa0a86571f3d5177b0bef934470f9a38"
+    }
+  ]
+}
