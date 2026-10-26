@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "status": "STATIC_REFERENCE_ONLY",
+  "integration_base": "142f91e402269d5893e06cee5243ce8150dfaac9",
+  "placeholders": {
+    "PUBLIC_BASE_URL": "HTTPS public origin only; no credentials, query, fragment or path",
+    "MENU_PATH": "Exact profile menu_path; relative POSIX path, case sensitive",
+    "ASSET_ROOT": "Exact profile asset_root; relative POSIX path, case sensitive"
+  },
+  "profiles": [
+    {
+      "id": "bios-ipxe",
+      "firmware": "bios",
+      "loader": {
+        "required_asset_path": "loaders/bios/undionly.kpxe",
+        "bundled": false,
+        "qualification": "NOT_RUN",
+        "required_evidence": [
+          "exact SHA-256",
+          "source/license/build provenance",
+          "firmware and DHCP architecture interoperability receipt"
+        ]
+      },
+      "kernel": {
+        "architecture": null,
+        "required_assets": [],
+        "selected": false
+      },
+      "cpu_architecture": "x86",
+      "menu_path": "menus/bios-ipxe.ipxe",
+      "templates": [
+        "bios-ipxe/menu.ipxe"
+      ],
+      "asset_root": "assets/sambafied"
+    },
+    {
+      "id": "bios-pxelinux",
+      "firmware": "bios",
+      "loader": {
+        "required_asset_path": "loaders/bios/pxelinux.0",
+        "bundled": false,
+        "qualification": "NOT_RUN",
+        "required_evidence": [
+          "exact SHA-256",
+          "source/license/build provenance",
+          "firmware and DHCP architecture interoperability receipt"
+        ]
+      },
+      "kernel": {
+        "architecture": null,
+        "required_assets": [],
+        "selected": false
+      },
+      "cpu_architecture": "x86",
+      "menu_path": "menus/bios-pxelinux.txt",
+      "templates": [
+        "bios-pxelinux/default.cfg",
+        "bios-pxelinux/menu.txt"
+      ],
+      "asset_root": "assets/sambafied"
+    },
+    {
+      "id": "uefi-x86_64-ipxe",
+      "firmware": "uefi",
+      "loader": {
+        "required_asset_path": "loaders/uefi-x86_64/ipxe.efi",
+        "bundled": false,
+        "qualification": "NOT_RUN",
+        "required_evidence": [
+          "exact SHA-256",
+          "source/license/build provenance",
+          "firmware and DHCP architecture interoperability receipt"
+        ]
+      },
+      "kernel": {
+        "architecture": null,
+        "required_assets": [],
+        "selected": false
+      },
+      "cpu_architecture": "x86_64",
+      "menu_path": "menus/uefi-x86_64-ipxe.ipxe",
+      "templates": [
+        "uefi-x86_64-ipxe/menu.ipxe"
+      ],
+      "asset_root": "assets/sambafied"
+    }
+  ],
+  "dhcp_architecture_policy": {
+    "0": {
+      "default_profile": "bios-ipxe",
+      "allowed_profiles": [
+        "bios-ipxe",
+        "bios-pxelinux"
+      ],
+      "qualification_required_for_each_architecture": true
+    },
+    "7": {
+      "default_profile": "uefi-x86_64-ipxe",
+      "allowed_profiles": [
+        "uefi-x86_64-ipxe"
+      ],
+      "qualification_required_for_each_architecture": true
+    },
+    "9": {
+      "default_profile": "uefi-x86_64-ipxe",
+      "allowed_profiles": [
+        "uefi-x86_64-ipxe"
+      ],
+      "qualification_required_for_each_architecture": true
+    }
+  },
+  "unknown_architecture": "NO_LOADER",
+  "missing_qualification": "NO_LOADER",
+  "provenance": [
+    {
+      "commit": "b0aeaa128c16d70a29ccbba841ff9dcfbdaa53fc",
+      "path": "public/menu.ejs",
+      "license": "MIT",
+      "adaptation": "Text menu/item and return-to-firmware expressions only; no recipes copied"
+    },
+    {
+      "commit": "1b6be33569b47972bf939a2a332b0c533fd2cccf",
+      "path": "public/menu.txt",
+      "license": "Apache-2.0",
+      "adaptation": "English return/menu labels and item/choose/exit structure; no recipes copied"
+    }
+  ]
+}
