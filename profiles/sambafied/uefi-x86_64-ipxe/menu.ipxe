@@ -1,0 +1,8 @@
+#!ipxe
+echo Sambafied UEFI x86_64 iPXE
+echo Published asset root: @@PUBLIC_BASE_URL@@/@@ASSET_ROOT@@
+echo Published menu: @@PUBLIC_BASE_URL@@/@@MENU_PATH@@
+menu Sambafied boot menu
+item return Return control
+choose --default return selection || exit 0
+exit 0

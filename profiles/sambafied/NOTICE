@@ -1,0 +1,14 @@
+Sambafied static text-first menu source templates
+
+New reference templates authored for Sambafied. Adapted text-menu/item/choose/
+exit expressions and English return labels are inspired by:
+- leruetkins TFTP-NP public/menu.ejs at b0aeaa128c16d70a29ccbba841ff9dcfbdaa53fc,
+  MIT; copyright (c) 2023 leruetkins. See notices/MIT.txt.
+- PXE-NP public/menu.txt at 1b6be33569b47972bf939a2a332b0c533fd2cccf,
+  Apache-2.0. See notices/Apache-2.0.txt. No donor NOTICE existed at that pin.
+
+These adapted files were changed: presentation is English Sambafied, graphics,
+boot recipes, sample credentials, shell/config/reboot/power actions and remote
+chaining were removed, and safe placeholders were introduced. The BIOS PXELINUX
+configuration/display source is newly authored. No upstream executable, loader,
+kernel, OS image or helper is included. No upstream endorsement is implied.
