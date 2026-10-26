@@ -80,3 +80,7 @@ Run `python3 references/admin-ui-2024/verify.py` from the repository root. The
 read-only verifier checks the exact selected file set, sizes, SHA-256, original
 Git blob bytes and non-executable modes, and rejects extra recovered payloads.
 No browser, server, command socket, network listener or legacy script was run.
+
+The raw `git diff --check` reports inherited trailing whitespace in the exact
+recovered bytes. This is retained for provenance; authored README, manifest and
+verifier pass the scoped whitespace check. No recovered content was normalized.
